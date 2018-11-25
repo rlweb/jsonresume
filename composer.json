@@ -18,7 +18,8 @@
         }
     ],
     "require": {
-        "php": "~7"
+        "php": "~7",
+        "swaggest/json-schema": "^0.12.5"
     },
     "autoload": {
         "psr-4": { "Rlweb\\JSONResume\\": "src/" }
