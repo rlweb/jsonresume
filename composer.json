@@ -1,0 +1,46 @@
+{
+    "name": "rlweb/jsonresume",
+    "description": "A package for JSON Resume for PHP. It includes the Datatypes and provides a parser.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^7.4",
+        "vimeo/psalm": "^3.0",
+        "swaggest/php-code-builder": "^0.2.3",
+        "jsonresume/resume-schema": "1.0.0",
+        "symfony/console": "^4.1",
+        "squizlabs/php_codesniffer": "^3.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rhys Laval",
+            "email": "rhyslaval@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~7"
+    },
+    "autoload": {
+        "psr-4": { "Rlweb\\JSONResume\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rlweb\\JSONResume\\Tests\\": "tests/",
+            "Rlweb\\JSONResume\\Dev\\": "src-dev/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "jsonresume/resume-schema",
+                "version": "v1.0.0",
+                "source": {
+                    "url": "https://github.com/jsonresume/resume-schema.git",
+                    "type": "git",
+                    "reference": "v1.0.0"
+                }
+            }
+        }
+    ]
+}
